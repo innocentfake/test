@@ -59,14 +59,14 @@ plugin_dicts: Dict[str, Dict[str, MangaClient]] = {
         "LikeManga": LikeMangaClient(),
         "ReaperScans": ReaperScansClient(),
           },
-    "🇪🇸 ES": {
-        "MangaDex": MangaDexClient(language=("es-la", "es")),
-        "ManhuaKo": ManhuaKoClient(),
-        "TMO": TMOClient(),
-        "Mangatigre": MangatigreClient(),
-        "NineManga": NineMangaClient(language='es'),
-        "MangasIn": MangasInClient(),
-    },
+    #"🇪🇸 ES": {
+        #"MangaDex": MangaDexClient(language=("es-la", "es")),
+        #"ManhuaKo": ManhuaKoClient(),
+        #"TMO": TMOClient(),
+        #"Mangatigre": MangatigreClient(),
+        #"NineManga": NineMangaClient(language='es'),
+        #"MangasIn": MangasInClient(),
+    #},
     "🔞 18+": {
         "Manga18fx": Manga18fxClient(),
         "MangaDistrict": MangaDistrictClient(),
@@ -181,21 +181,21 @@ async def on_start(client: Client, message: Message):
     if message.from_user.id not in AUTH_USERS:
         return await message.reply_text("You Can't Use Me Buddy' :(")
     logger.info(f"User {message.from_user.id} started the bot")
-    await message.reply("Welcome to the best manga pdf bot in telegram!!\n"
+    await message.reply("<blockquote>Welcome to the best Sect Manga bot!!\n</blockquote>"
                         "\n"
                         "How to use? Just type the name of some manga you want to keep up to date.\n"
+                        "<blockquote>For example:\n</blockquote>"
+                        "`Solo Leveling`\n"
                         "\n"
-                        "For example:\n"
-                        "`One Piece`\n"
-                        "\n"
-                        "Check /help for more information.")
+                        "Check /help for more information.\n"
+                        "<blockquote>𝘰𝘳 𝘤𝘰𝘯𝘵𝘢𝘤𝘵 @aaru_2074</blockquote>")
     logger.info(f"User {message.from_user.id} finished the start command")
     
 
 @bot.on_message(filters=filters.command(['help']))
 async def on_help(client: Client, message: Message):
     if message.from_user.id not in AUTH_USERS:
-        return await message.reply_text("You Can't Use Me Buddy' :(")
+        return await message.reply_text("You Can't Use Me Buddy,𝗮𝘀𝗸 𝗮𝗱𝗺𝗶𝗻 𝗳𝗼𝗿 𝗮𝗰𝗰𝗲𝘀𝘀' :(")
     await message.reply(help_msg)
 
 
