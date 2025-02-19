@@ -145,14 +145,19 @@ async def on_chat_or_channel_message(client: Client, message: Message):
 
 @bot.on_message()
 async def on_private_message(client: Client, message: Message):
+    emoji = ["🥳", "🙂", "💅", "❤️", "👍", "💋", "😱", "⚡️", "🔥", "💸", "😘", "😁", "😜", "🥶", "🤯", "😈", "👾", "💦", "❣️", "🎉"]
+    emoji = import random.choice(emoji)
+ 
+    try: await client.send_reaction(chat_id=message.chat.id, message_id=message.id, emoji=f"{emoji}", big=True)
+    except: pass
     if message.from_user.id not in AUTH_USERS:
         return await message.reply_text("You Can't Use Me Buddy' :(")
-    channel = env_vars.get('CHANNEL') 
+        channel = env_vars.get('CHANNEL') 
     if not channel:
         return message.continue_propagation()
     if in_channel_cached := users_in_channel.get(message.from_user.id):
         if dt.datetime.now() - in_channel_cached < dt.timedelta(days=1):
-            return message.continue_propagation()
+        return message.continue_propagation()
     try:
         if await client.get_chat_member(channel, message.from_user.id):
             users_in_channel[message.from_user.id] = dt.datetime.now()
