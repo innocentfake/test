@@ -152,7 +152,7 @@ async def on_private_message(client: Client, message: Message):
     except: pass
     if message.from_user.id not in AUTH_USERS:
         return await message.reply_text("You Can't Use Me Buddy' :(")
-        channel = env_vars.get('CHANNEL') 
+    channel = env_vars.get('CHANNEL') 
     if not channel:
         return message.continue_propagation()
     if in_channel_cached := users_in_channel.get(message.from_user.id):
