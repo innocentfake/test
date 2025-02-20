@@ -161,7 +161,7 @@ async def on_private_message(client: Client, message: Message):
     try:
         if await client.get_chat_member(channel, message.from_user.id):
             users_in_channel[message.from_user.id] = dt.datetime.now()
-            return message.continue_propagation()
+        return message.continue_propagation()
     except pyrogram.errors.UsernameNotOccupied:
         logger.debug("Channel does not exist, therefore bot will continue to operate normally")
         return message.continue_propagation()
