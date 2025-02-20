@@ -146,7 +146,7 @@ async def on_chat_or_channel_message(client: Client, message: Message):
 @bot.on_message()
 async def on_private_message(client: Client, message: Message):
     emoji = ["🥳", "🙂", "💅", "❤️", "👍", "💋", "😱", "⚡️", "🔥", "💸", "😘", "😁", "😜", "🥶", "🤯", "😈", "👾", "💦", "❣️", "🎉"]
-    emoji = import random.choice(emoji)
+    emoji = random.choice(emoji)
  
     try: await client.send_reaction(chat_id=message.chat.id, message_id=message.id, emoji=f"{emoji}", big=True)
     except: pass
