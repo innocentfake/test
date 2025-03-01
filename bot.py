@@ -30,7 +30,7 @@ from tools.flood import retry_on_flood
 
 
 OWNER_ID = 5455664988 # put owner id in number directly 
-auth_users = [5455664988,5543390445,5543390445,5164955785] # eg: [83528911,836289,9362891]
+auth_users = [5455664988,7689650499] # eg: [83528911,836289,9362891]
 AUTH_USERS = auth_users + [OWNER_ID]
 
 
@@ -202,7 +202,7 @@ async def on_start(client: Client, message: Message):
                         "`Solo Leveling`\n"
                         "\n"
                         "Check /help for more information.\n"
-                        "<blockquote>𝘰𝘳 𝘤𝘰𝘯𝘵𝘢𝘤𝘵 @aaru_2074</blockquote>")
+                        "<blockquote>𝘰𝘳 𝘤𝘰𝘯𝘵𝘢𝘤𝘵 @letschatbro</blockquote>")
     logger.info(f"User {message.from_user.id} finished the start command")
     
 
