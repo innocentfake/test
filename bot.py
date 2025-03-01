@@ -202,7 +202,6 @@ async def on_start(client: Client, message: Message):
                         "`Solo Leveling`\n"
                         "\n"
                         "Check /help for more information.\n"
-                        "<blockquote>𝘰𝘳 𝘤𝘰𝘯𝘵𝘢𝘤𝘵 @letschatbro</blockquote>")
     logger.info(f"User {message.from_user.id} finished the start command")
     
 
