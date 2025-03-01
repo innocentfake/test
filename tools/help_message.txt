@@ -10,6 +10,4 @@
 3. /options: Customize output preferences (PDF, CBZ, Telegraph formats).
 4. /help: Displays a list of commands and their descriptions.
 
-<blockquote>Stay updated: @Manga_Campus</blockquote>
-<blockquote>Updates Channel : @Manga_Campus_Chat</blockquote>
-<blockquote>For any issue contact: @aaru_2074</blockquote>
+<blockquote>Stay updated: @Manga_Sect</blockquote>
