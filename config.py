@@ -1,14 +1,14 @@
 env_vars = {
   # Get From my.telegram.org
-  "API_HASH": "e9bfc473049cbaeff901ca6892d559c7",
+  "API_HASH": "",
   # Get From my.telegram.org
-  "API_ID": "20373005",
+  "API_ID": "",
   #Get For @BotFather
-  "BOT_TOKEN": "7832627909:AAGGsogMeltJoMwacD5obZIci3sHJsIVzSw",
+  "BOT_TOKEN": "8118842825:AAHdTXuVtzc3Lm_UWbBr8hqfDHQq5UF56MY",
   # Get For tembo.io
-  "DATABASE_URL_PRIMARY": "postgresql://postgres:C4VEgkZOIsrV0to9@rustically-undaunted-mastodon.data-1.use1.tembo.io:5432/postgres",
+  "DATABASE_URL_PRIMARY": "postgresql://postgres:y4FYdvw7QPqGYdcK@cheekily-versed-houndshark.data-1.use1.tembo.io:5432/postgres",
   # Logs Channel Username Without @
-  "CACHE_CHANNEL": "dump_manhwa",
+  "CACHE_CHANNEL": "fuck_umanga",
   # Force Subs Channel username without @
   "CHANNEL": "Manga_Sect",
   # {chap_num}: Chapter Number
